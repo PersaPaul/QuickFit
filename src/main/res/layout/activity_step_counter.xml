@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/stpbg"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".StepCounter">
+
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STOP"
+        android:id="@+id/sp"
+        android:background="#545454"
+        android:onClick="stopApp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAUSE"
+        android:id="@+id/ps"
+        android:background="#545454"
+        android:onClick="pauseApp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance"
+        android:textColor="@color/background_material_light"
+        android:id="@+id/dist"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:layout_toEndOf="@+id/textView2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Time"
+        android:paddingTop="15dp"
+        android:gravity="center"
+        android:textColor="@color/background_material_light"
+        android:id="@+id/time"
+        android:textSize="25sp"
+        android:layout_below="@+id/dist"
+        android:layout_alignEnd="@+id/dist"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Distance:"
+        android:textColor="@color/background_material_light"
+        android:gravity="center"
+        android:id="@+id/textView2"
+        android:textSize="25sp"
+        android:layout_above="@+id/time"
+        android:layout_alignTop="@+id/dist"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/background_material_light"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Time:"
+        android:textSize="25sp"
+        android:paddingTop="15dp"
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/time"
+        android:layout_alignTop="@+id/time"
+        android:layout_alignParentStart="true" />
+
+
+
+
+</RelativeLayout>

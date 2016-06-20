@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="18dp"
+    android:background="@color/bg_register"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/bLogout"
+        android:layout_width="match_parent"
+        android:text="LOGOUT"
+        android:textColor="@color/button_material_light"
+        android:layout_height="wrap_content"
+        android:background="#2F4F4F"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome back, "
+        android:id="@+id/textView"
+        android:paddingLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/background_material_light"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+       />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:id="@+id/etName"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView"
+        android:textSize="20sp"
+        android:textColor="@color/background_material_light"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START SESSION"
+        android:id="@+id/start"
+        android:textColor="@color/button_material_light"
+        android:background="#2F4F4F"
+        android:layout_above="@+id/bLogout"
+        android:layout_marginBottom="15dp"
+        android:layout_alignEnd="@+id/bLogout"
+        android:textSize="15sp"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RUNNING MODE"
+        android:textColor="@color/button_material_light"
+        android:id="@+id/sport"
+        android:textSize="15sp"
+        android:background="#2F4F4F"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/start"
+        android:layout_alignEnd="@+id/start"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
